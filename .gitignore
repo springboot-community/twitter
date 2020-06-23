@@ -1,0 +1,13 @@
+# bin/
+*.iml
+.pydevproject
+target/
+bin/
+.project
+.classpath
+.settings/
+.idea/
+.factorypath
+logs/
+*.log
+*.zip
