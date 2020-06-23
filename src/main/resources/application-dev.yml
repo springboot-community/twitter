@@ -1,0 +1,50 @@
+server:
+  port: 80
+  servlet:
+    context-path: /
+
+spring:
+  pid:
+    file: D:\\twitter.pid
+    fail-on-write-error: true
+
+  gson:
+    pretty-printing: true
+
+  servlet:
+    multipart:
+      location: D:\\temp
+
+  redis:
+    database: 0
+    host: "127.0.0.1"
+    port: 6379
+    password: 
+    timeout: 2000
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+
+  freemarker:
+    cache: false
+
+jwt:
+  token: "ab6771f0-afa6-11ea-***********"
+
+oauth2:
+  github:
+    client-id: "e3afad475f1************"
+    client-secret: "11d304f*********************"
+
+github:
+  bucket:
+    user: "springboot-community"
+    repository: "twitter-bucket"
+    access-token: "996e748cb47117a***************"
+    url: "https://cdn.jsdelivr.net/gh/${github.bucket.user}/${github.bucket.repository}/"
+    api: "https://api.github.com/repos/${github.bucket.user}/${github.bucket.repository}/contents/"
+
+  
